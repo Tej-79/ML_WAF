@@ -116,6 +116,11 @@ pip install -r requirements.txt
 
 ---
 
+> **Integration Note:**
+    >The FastAPI inference endpoint can be invoked by external WAF engines to make real-time ALLOW/BLOCK decisions.
+
+---
+
 ## Results
 
 - High accuracy on replayed UNSW-NB15 traffic
