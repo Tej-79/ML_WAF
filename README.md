@@ -41,25 +41,6 @@ The system is designed to be **modular, explainable, and extensible**.
 5. Results are visualized in real time on a Streamlit dashboard  
 
 ---
- 
-UNSW-NB15 Dataset
-↓
-Traffic Replay Engine
-↓
-FastAPI ML Inference API
-(RandomForest Model)
-↓
-ALLOW / BLOCK Decision
-↓
-Streamlit Dashboard
-    - Live Decision Card
-
-    - Traffic Logs
-
-    - Performance Metrics
-
-
----
 
 ## Machine Learning Model
 
@@ -101,31 +82,13 @@ The dashboard is designed to resemble a **Security Operations Center (SOC)** mon
 
 ---
 
-## Project Structure
+## Tech Stack used 
 
----
-
-ML_WAF/
-│
-├── app/
-│ ├── main.py # FastAPI inference service
-│ ├── dashboard.py # Streamlit dashboard
-│ ├── replay.py # Traffic replay logic
-│
-├── Dataset/
-│ ├── Testing.csv
-│ ├── UNSW_NB15_training-set.csv
-│ ├── UNSW_NB15_testing-set.csv
-│
-├── Model/
-│ ├── feature_columns.json
-│ ├── le2_classes.npy
-│ ├── minmaxscaler.pkl
-│ └── (model binary excluded)
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+- Python
+- Scikit-learn
+- FastAPI
+- Streamlit
+- Pandas / NumPy
 
 ---
 
