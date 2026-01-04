@@ -42,7 +42,6 @@ The system is designed to be **modular, explainable, and extensible**.
 
 ---
  
-
 UNSW-NB15 Dataset
 ↓
 Traffic Replay Engine
@@ -53,12 +52,11 @@ FastAPI ML Inference API
 ALLOW / BLOCK Decision
 ↓
 Streamlit Dashboard
+    - Live Decision Card
 
-Live Decision Card
+    - Traffic Logs
 
-Traffic Logs
-
-Performance Metrics
+    - Performance Metrics
 
 
 ---
@@ -105,6 +103,8 @@ The dashboard is designed to resemble a **Security Operations Center (SOC)** mon
 
 ## Project Structure
 
+---
+
 ML_WAF/
 │
 ├── app/
@@ -127,7 +127,6 @@ ML_WAF/
 ├── README.md
 └── .gitignore
 
-
 ---
 
 ## How to Run the Project
@@ -136,54 +135,54 @@ ML_WAF/
 pip install -r requirements.txt
 
 ### 2. Start FastAPI backend
-From the project root in first terminal:
-python -m uvicorn app.main:app --reload
-API will be available at :http://127.0.0.1:8000
+- From the project root in first terminal:
+- python -m uvicorn app.main:app --reload
+- API will be available at :http://127.0.0.1:8000
 
 ### 3. Start Streamlit 
-From the project root in Second terminal:
-python -m streamlit run app/dashboard.py
+- From the project root in Second terminal:
+- python -m streamlit run app/dashboard.py
 
 ---
 
 ## Run Live Traffic Simulation
 
-Open the dashboard in browser
-Click Start Live Traffic
-Observe real-time decisions, logs, and metrics
+- Open the dashboard in browser
+- Click Start Live Traffic
+- Observe real-time decisions, logs, and metrics
 
 ---
 
 ## Results
 
-High accuracy on replayed UNSW-NB15 traffic
+- High accuracy on replayed UNSW-NB15 traffic
 
-Effective separation of normal and attack traffic at WAF level
+- Effective separation of normal and attack traffic at WAF level
 
-Reduced false alarms through feature selection and model tuning
+- Reduced false alarms through feature selection and model tuning
 
-Performance is visualized live using metrics and a confusion matrix.
+- Performance is visualized live using metrics and a confusion matrix.
 
 ---
 
 ## Limitations
 
-Model binary not included in the repository
-Real network packet capture is not integrated (dataset replay used)
-Bot traffic is not explicitly labeled in the dataset
+- Model binary not included in the repository
+- Real network packet capture is not integrated (dataset replay used)
+- Bot traffic is not explicitly labeled in the dataset
 
 ---
 
 ## Future Work
 
-Integration with live packet capture (PCAP / network interface)
-Threshold-based confidence tuning for false alarm reduction
-Explicit bot and DDoS traffic classification
-Deployment using Docker and reverse proxy integration
+- Integration with live packet capture (PCAP / network interface)
+- Threshold-based confidence tuning for false alarm reduction
+- Explicit bot and DDoS traffic classification
+- Deployment using Docker and reverse proxy integration
 
 ---
 
 ## Conclusion
 
-This project demonstrates how machine learning can enhance traditional Web Application Firewalls by enabling behavioral detection, adaptability to unknown attacks, and real-time visibility.
-The modular architecture allows easy extension toward production-ready deployments.
+- This project demonstrates how machine learning can enhance traditional Web Application Firewalls by enabling behavioral detection, adaptability to unknown attacks, and real-time visibility.
+- The modular architecture allows easy extension toward production-ready deployments.
