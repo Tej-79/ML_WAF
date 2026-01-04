@@ -1,0 +1,12 @@
+[
+  "dttl",
+  "swin",
+  "dwin",
+  "tcprtt",
+  "synack",
+  "ackdat",
+  "proto_tcp",
+  "proto_udp",
+  "service_dns",
+  "state_FIN"
+]
