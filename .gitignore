@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 
-# ML model binaries (DO NOT PUSH)
+# ML model 
 *.pkl
 
 ML_WAF\app\tochosetestdata.py
